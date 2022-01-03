@@ -17,7 +17,7 @@ html {
   font-size: 18px;
 }
 
-nav {
+.nav {
   position: sticky;
   z-index: 2;
   top: 0;
@@ -28,7 +28,7 @@ nav {
   height: 80px;
 }
 
-nav img {
+.nav__logo {
   width: 135px;
   height: 36px;
   left: 100px;
@@ -36,7 +36,7 @@ nav img {
   cursor: pointer;
 }
 
-nav ul {
+.nav__menu {
   display: flex;
   gap: 50px;
   list-style: none;
@@ -45,30 +45,28 @@ nav ul {
   cursor: pointer;
 }
 
-nav ul .active a {
+.menu__item,
+.active a {
   font-weight: 700;
   color: var(--primary);
 }
 
-nav ul a {
+.menu__item a {
   text-decoration: none;
 }
 
-nav button {
+.nav__button {
   margin-left: auto;
 }
 
-button {
-  box-sizing: border-box;
-  border-radius: 50px;
+.button {
+  border-radius: 1500px;
   cursor: pointer;
 }
 
-.button {
+.button--fill {
   background: #2d76f9;
-  border-radius: 1500px;
   color: #ffffff;
-  padding: 24px 58px;
   border: 1.5px solid var(--primary);
 }
 
@@ -80,7 +78,7 @@ button {
   border: 1.5px solid #ffffff;
 }
 
-.button-outline {
+.button--outline {
   border: 1.5px solid var(--primary);
   width: 175px;
   height: 50px;
@@ -108,7 +106,6 @@ button {
 .hero__description {
   width: 533px;
   padding-left: 100px;
-  padding-bottom: 90px;
 }
 
 .hero h1 {
@@ -129,13 +126,14 @@ button {
   color: #747474;
 }
 
-.hero button {
+.hero__button {
+  padding: 24px 58px;
   margin-top: 50px;
   line-height: 27px;
   font-weight: 500;
 }
 
-.hero img {
+.hero__image {
   position: absolute;
   left: 845px;
   top: 175px;
@@ -154,7 +152,7 @@ button {
   height: 288px;
 }
 
-.card-icon {
+.card__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -164,19 +162,19 @@ button {
   border-radius: 100px;
 }
 
-.card-icon img {
+.card__icon img {
   width: 56px;
   height: 56px;
 }
 
-.card-header {
+.card__header {
   margin-top: 50px;
   font-weight: 700;
   font-size: 24px;
   line-height: 36px;
 }
 
-.card-description {
+.card__description {
   margin-top: 30px;
   color: #747474;
 }
@@ -218,7 +216,7 @@ button {
   margin-right: 147px;
 }
 
-.advantages__header {
+.info__header {
   margin-top: 120px;
   width: 493px;
   height: 130px;
@@ -227,7 +225,7 @@ button {
   line-height: 65px;
 }
 
-.advantages__description {
+.info__description {
   margin-top: 50px;
   width: 493px;
   height: 180px;
@@ -248,7 +246,7 @@ button {
   align-items: center;
 }
 
-.userpaging h2 {
+.userpaging__header {
   display: flex;
   width: 750px;
   height: 130px;
@@ -282,7 +280,7 @@ button {
   margin: 60px 0 0 147px;
 }
 
-.testimonial__info h3 {
+.testimonial__header {
   width: 493px;
   height: 65px;
   font-weight: 600;
@@ -295,11 +293,11 @@ button {
   display: flex;
 }
 
-.user-info {
+.user__info {
   margin-left: 31px;
 }
 
-.user-info .user-name {
+.user__name {
   width: 159px;
   height: 27px;
   font-weight: 600;
@@ -307,11 +305,11 @@ button {
   line-height: 27px;
 }
 
-.user-info .user-status {
+.user__status {
   margin-top: 20px;
 }
 
-.testimonial__info > p {
+.testimonial__description {
   margin-top: 49px;
   width: 493px;
   height: 150px;
@@ -319,12 +317,12 @@ button {
   line-height: 36px;
 }
 
-footer {
+.footer {
   margin-top: 150px;
   padding: 75px 0 137px 100px;
 }
 
-footer > img {
+.footer__logo {
   margin-bottom: 30px;
 }
 
@@ -333,7 +331,7 @@ footer > img {
   gap: 40px;
 }
 
-.footer__item p {
+.footer__summary {
   width: 387px;
   height: 108px;
   font-size: 18px;
