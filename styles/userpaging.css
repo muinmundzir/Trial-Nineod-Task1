@@ -1,0 +1,56 @@
+.userpaging {
+  margin: 150px 0 150px 0;
+  padding-top: 100px;
+  width: 1240px;
+  height: 500px;
+  background: var(--primary);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.userpaging__header {
+  display: flex;
+  width: 750px;
+  height: 130px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 65px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 95px;
+}
+
+.userpaging__cta {
+  display: flex;
+  gap: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .userpaging {
+    margin: 0 32px 50px;
+    padding: 50px 0;
+    border-radius: 50px;
+    width: auto;
+  }
+
+  .userpaging__header {
+    display: flex;
+    width: 276px;
+    height: 144px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 0 50px 0;
+  }
+
+  .userpaging__cta {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+}
