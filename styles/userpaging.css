@@ -1,6 +1,4 @@
 .userpaging {
-  margin: 150px 0 150px 0;
-  padding-top: 100px;
   width: 1240px;
   height: 500px;
   background: var(--primary);
@@ -9,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: 75px auto;
 }
 
 .userpaging__header {
